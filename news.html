@@ -19,13 +19,16 @@
     }
     nav {
       background: #1b5e20;
-      padding: 10px 0;
+      padding: 15px 0; /* Matches index.html */
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
     nav ul {
       list-style: none;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 30px; /* Matches index.html */
     }
     nav ul li {
       display: inline;
@@ -33,9 +36,10 @@
     nav ul li a {
       color: white;
       text-decoration: none;
-      font-size: 1.1em;
-      padding: 8px 15px;
+      font-size: 1.1em; /* Matches index.html */
+      padding: 10px 15px; /* Matches index.html */
       border-radius: 5px;
+      transition: background 0.3s;
     }
     nav ul li a:hover {
       background: #388e3c;
@@ -46,22 +50,22 @@
     header {
       background: #2e7d32;
       color: white;
-      padding: 20px;
+      padding: 30px 20px;
     }
     header h1 {
       font-size: 2.5em;
     }
     .content {
-      padding: 20px;
-      max-width: 800px;
+      padding: 30px 20px;
+      max-width: 900px;
       margin: 0 auto;
     }
     .news-item {
       background: #fff;
-      padding: 15px;
+      padding: 20px;
       margin: 20px 0;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: left;
     }
     .news-item h2 {
@@ -74,13 +78,20 @@
     footer {
       background: #333;
       color: white;
-      padding: 10px;
+      padding: 15px;
       font-size: 0.9em;
     }
     @media (max-width: 600px) {
-      header h1 { font-size: 1.8em; }
-      .content { padding: 10px; }
-      nav ul { flex-direction: column; gap: 10px; }
+      header h1 { font-size: 2em; }
+      .content { padding: 20px 10px; }
+      nav ul { 
+        flex-direction: column; 
+        gap: 15px; 
+      }
+      nav ul li a { 
+        font-size: 1.1em; 
+        padding: 8px 15px; 
+      }
     }
   </style>
 </head>
