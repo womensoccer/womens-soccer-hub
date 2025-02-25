@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leagues - Women's Soccer Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+    }
+    nav {
+      background: #1b5e20;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background: #388e3c;
+    }
+    nav ul li a.active {
+      background: #e91e63;
+    }
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 30px 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    .content {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .league {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .league h2 {
+      font-size: 1.5em;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+    .league ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+    .league ul li {
+      margin: 5px 0;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      .content { padding: 20px 10px; }
+      nav ul { flex-direction: column; gap: 15px; }
+      nav ul li a { font-size: 1.1em; padding: 8px 15px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="clubs.html" class="active">Clubs</a></li>
+
+    </ul>
+  </nav>
+  
+  <header>
+    <h1>Top Women’s Soccer Leagues</h1>
+  </header>
+  
+  <section class="content">
+    <div class="league">
+      <h2>England - Women’s Super League (WSL)</h2>
+      <ul>
+        <li>Arsenal WFC</li>
+        <li>Aston Villa WFC</li>
+        <li>Brighton & Hove Albion WFC</li>
+        <li>Chelsea FC Women</li>
+        <li>Crystal Palace WFC</li>
+        <li>Everton FC Women</li>
+        <li>Leicester City WFC</li>
+        <li>Liverpool FC Women</li>
+        <li>Manchester City WFC</li>
+        <li>Manchester United WFC</li>
+        <li>Tottenham Hotspur WFC</li>
+        <li>West Ham United WFC</li>
+      </ul>
+    </div>
+    
+    <div class="league">
+      <h2>Germany - Frauen-Bundesliga</h2>
+      <ul>
+        <li>1. FFC Turbine Potsdam</li>
+        <li>1. FC Köln</li>
+        <li>Bayer 04 Leverkusen</li>
+        <li>Bayern Munich</li>
+        <li>Eintracht Frankfurt</li>
+        <li>FC Carl Zeiss Jena</li>
+        <li>RB Leipzig</li>
+        <li>SGS Essen</li>
+        <li>SC Freiburg</li>
+        <li>TSG 1899 Hoffenheim</li>
+        <li>VfL Wolfsburg</li>
+        <li>Werder Bremen</li>
+      </ul>
+    </div>
+    
+    <div class="league">
+      <h2>Spain - Liga F</h2>
+      <ul>
+        <li>Athletic Club</li>
+        <li>Atlético Madrid</li>
+        <li>Deportivo de La Coruña</li>
+        <li>FC Barcelona</li>
+        <li>Granada CF</li>
+        <li>Levante UD</li>
+        <li>Madrid CFF</li>
+        <li>RC Deportivo</li>
+        <li>Real Betis</li>
+        <li>Real Madrid</li>
+        <li>Real Sociedad</li>
+        <li>SD Eibar</li>
+        <li>Sevilla FC</li>
+        <li>Sporting de Huelva</li>
+        <li>UD Tenerife</li>
+        <li>Valencia CF</li>
+        <li>Villarreal CF</li>
+      </ul>
+    </div>
+    
+    <div class="league">
+      <h2>Italy - Serie A Femminile</h2>
+      <ul>
+        <li>AC Milan</li>
+        <li>ACF Fiorentina</li>
+        <li>AS Roma</li>
+        <li>FC Como Women</li>
+        <li>Inter Milan</li>
+        <li>Juventus FC</li>
+        <li>SS Lazio</li>
+        <li>SSC Napoli</li>
+        <li>Sampdoria Women</li>
+        <li>US Sassuolo</li>
+      </ul>
+    </div>
+  </section>
+  
+  <footer>
+    <p>© 2025 Women’s Soccer Hub | Contact: hello@womenssoccerhub.com</p>
+  </footer>
+</body>
+</html>
