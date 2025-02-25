@@ -17,6 +17,34 @@
       line-height: 1.6;
       text-align: center;
     }
+    /* Navigation Bar */
+    nav {
+      background: #1b5e20;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+    nav ul li a:hover {
+      background: #388e3c;
+    }
+    nav ul li a.active {
+      background: #e91e63;
+    }
+    /* Existing Styles */
     header {
       background: #2e7d32;
       color: white;
@@ -69,10 +97,20 @@
       header h1 { font-size: 1.8em; }
       header p { font-size: 1em; }
       .content { padding: 10px; }
+      nav ul { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
 <body>
+  <!-- Navigation Bar with Tabs -->
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#players">Players</a></li>
+    </ul>
+  </nav>
+  
   <header>
     <h1>Women's Soccer Hub</h1>
     <p>Your home for news, stars, and stats in women’s football</p>
